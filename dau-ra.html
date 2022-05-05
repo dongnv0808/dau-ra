@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="showmesshtml"></div>
+    <button type="button" onclick="showmesshtml();" >show-mess-html</button><br>
+    
+    <button type="button" id="demo" onclick="showmess();">onclick-showmess</button><br>
+
+    <button type="button" onclick="documentwrite()">document-write</button><br>
+
+    <button type="button" onclick="consolelog()">console-log</button>
+    <script>
+        function showmess(){
+            alert("onclick-showmess");
+        }
+        function showmesshtml(){
+            document.getElementById("showmesshtml").innerHTML='show-mess-html';
+        }
+        function documentwrite(){
+            document.write("document-write");
+        }
+        function consolelog() {
+            console.log('console-log');
+        }
+    </script>
+</body>
+</html>
